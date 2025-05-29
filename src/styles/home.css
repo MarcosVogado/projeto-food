@@ -2,7 +2,10 @@
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
+    margin-top: 91px;
 }
+
+
 
 #cta{
     width: 35%;
@@ -18,7 +21,7 @@
 }
 
 #cta .title span{
-    color: #e9a209;
+    color: var(--color-primary-5);
 }
 
 #cta .description{
@@ -39,7 +42,7 @@
     display: flex;
     gap: 8px;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-neutral-0);
     padding: 8px 14px;
     font-weight: 600;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
@@ -61,11 +64,10 @@
 #banner img{
     width: fit-content;
     height: 100%;
-
 }
 
 .shape{
-    background-color: #ffe8b4;
+    background-color: var(--color-primary-2);
     width: 50%;
     height: 100%;
     position: absolute;
@@ -75,8 +77,13 @@
     z-index: 1;
 }
 
+.dish-info{
+    margin-top: auto;
+}
+
 @media screen and (max-width: 1050px){
     #home{
+        margin-top: 65px;
         min-height: 100%;
         padding-top: 0px;
     }
